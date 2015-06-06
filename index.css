@@ -3,7 +3,11 @@
 .bold    { font-weight: var(--bold-font-weight, bold) }
 .regular { font-weight: normal }
 .italic  { font-style: italic }
-.caps    { text-transform: uppercase; letter-spacing: .2em; }
+.caps {
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
+}
 
 .left-align   { text-align: left }
 .center       { text-align: center }
@@ -24,4 +28,3 @@
   list-style: none;
   padding-left: 0;
 }
-
